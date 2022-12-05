@@ -27,7 +27,7 @@ def q2(start, end):
     if 1 in lista:
         resposta.append(1)
     for i in lista:
-        for n in range(i)
+        for n in range(i):
             if n*n == i:
                 resposta.append(i)
     return resposta
