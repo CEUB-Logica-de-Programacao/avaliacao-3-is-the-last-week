@@ -36,7 +36,7 @@ def q4(s):
             contador += 1
         if lista[i] == ' ':
             contador -= 1
-        return contador
+    return contador
 
 
 if __name__ == '__main__':
