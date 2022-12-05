@@ -27,8 +27,16 @@
 # Para obter a nota máxima dessa questão, não deve-se utilizar nenhuma função pronta do Python.
 
 def q4(s):
-    # Escreva seu código aqui
-    return 0
+    lista = list(s)
+    if len(lista) == 0:
+        return 0
+    contador = 1
+    for i in range(len(lista)):
+        if lista[i].isupper():
+            contador += 1
+        if lista[i] == ' ':
+            contador -= 1
+    return contador
 
 
 if __name__ == '__main__':

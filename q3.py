@@ -31,8 +31,18 @@
 # Para obter a nota máxima dessa questão, não deve-se utilizar nenhuma função pronta do Python.
 
 def q3(arr, d):
-    # Escreva seu código aqui
-    return 0
+    n = 0
+    for a, x in enumerate(arr):
+        for b, y in enumerate(arr):
+            if a == b:
+                continue
+            for c, z in enumerate(arr):
+                if a == c or b == c:
+                    continue
+                if a < b and b < c:
+                    if y - x == d and z - y == d:
+                        n += 1
+    return n
 
 
 if __name__ == '__main__':
