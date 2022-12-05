@@ -67,7 +67,7 @@ def q5(s):
     for x in c:
         while a < len(b):
             if c[x] != c[b[a]]:
-                if c[x] - c[b[a]] == 1:
+                if c[x] - c[b[a]] == 1 or c[b[a]] - c[x] == 1:
                     valido = True
                     break
                 valido = False
