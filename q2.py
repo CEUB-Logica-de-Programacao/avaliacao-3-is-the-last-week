@@ -23,14 +23,14 @@
 def q2(start, end):
     lista = []
     lista.extend(range(start, end+1))
-    resultado = []
+    resposta = []
     if 1 in lista:
         numpro.append(1)
     for i in lista:
         for n in range(i)
             if n*n == i:
-                resultado.append(i)
-    return resultado
+                resposta.append(i)
+    return resposta
 
 
 if __name__ == '__main__':
