@@ -21,8 +21,16 @@
 # Para obter a nota máxima dessa questão, não deve-se utilizar nenhuma função pronta do Python.
 
 def q2(start, end):
-    # Escreva seu código aqui
-    return []
+    lista = []
+    lista.extend(range(start, end+1))
+    resultado = []
+    if 1 in lista:
+        numpro.append(1)
+    for i in lista:
+        for n in range(i)
+            if n*n == i:
+                resultado.append(i)
+    return resultado
 
 
 if __name__ == '__main__':
