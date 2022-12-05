@@ -52,8 +52,28 @@
 # Para obter a nota máxima dessa questão, não deve-se utilizar nenhuma função pronta do Python.
 
 def q5(s):
-    # Escreva seu código aqui
-    return False
+    senha = list(s)
+    a = 1
+    b = []
+    c = {}
+    valido = True
+    for x in senha:
+        if x not in b:
+            b.append(x)
+            c[x] = 0
+    for x in senha:
+        if x in b:
+            c[x] += 1
+    for x in c:
+        while a < len(b):
+            if c[x] != c[b[a]]:
+                if c[x] - c[b[a]] == 1:
+                    valido = True
+                    break
+                valido = False
+                break
+            a += 1
+    return valido
 
 
 if __name__ == '__main__':
